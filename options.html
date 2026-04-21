@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>New Tab Cleaner — Settings</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 1rem; max-width: 320px; }
+    label { display: block; margin-bottom: 0.5rem; font-size: 0.9rem; }
+    input[type=number] { width: 60px; margin: 0 0.4rem; }
+    #status { margin-top: 0.5rem; font-size: 0.8rem; color: green; }
+  </style>
+</head>
+<body>
+  <h2>New Tab Cleaner</h2>
+  <label>
+    Close unused new tabs after
+    <input type="number" id="timeout" min="1" max="60" value="5" />
+    minutes
+  </label>
+  <button id="save">Save</button>
+  <p id="status"></p>
+  <script src="options.js"></script>
+</body>
+</html>
