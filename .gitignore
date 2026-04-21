@@ -1,4 +1,5 @@
 .DS_Store
+*.af~lock~
 *.zip
 *.xpi
 web-ext-artifacts/
