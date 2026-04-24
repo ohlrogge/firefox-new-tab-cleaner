@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "New Tab Cleaner",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Closes stale new tabs and other new tabs when a new tab is opened.",
   "permissions": ["tabs", "storage", "alarms"],
   "background": {

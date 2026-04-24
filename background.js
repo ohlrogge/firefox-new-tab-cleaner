@@ -70,6 +70,7 @@ browser.alarms.onAlarm.addListener(async (alarm) => {
       const last = lastActive.get(t.id) ?? 0;
       return (now - last) >= timeoutMs;
     })
+    .filter(t => !t.active)
     .map(t => t.id);
   if (toClose.length > 0) {
     await browser.tabs.remove(toClose);
